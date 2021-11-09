@@ -3,15 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href='style.css'>
-    <title>milansep</title>
+    <title>Pure CSS Off Canvas Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
 </head>
 
 <body>
-    <h1>Welcome</h1>
-    <p>text text text</p>
+    <div class="container">
+        <input data-function="swipe" id="swipe" type="checkbox">
+        <label data-function="swipe" for="swipe">&#xf057;</label>
+        <label data-function="swipe" for="swipe">&#xf0c9;</label>
+
+        <div class="headings">
+            <h1>CSS Sideout Menu</h1>
+            <p>Without JavaScript Using Flex<p>
+        </div>
+
+        <div class="sidebar">
+            <nav class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+            </nav>
+        </div>
+
+    </div>
+
 </body>
 
 </html>
