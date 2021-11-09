@@ -93,7 +93,7 @@ input[data-function*='swipe']:checked~.sidebar .menu li {
     transform: translate3d(-280px, 0px, 0px);
     position: absolute;
     width: 280px;
-    background: #263249;
+    background: #242629;
     color: #eee;
     left: 0;
     height: 100%;
