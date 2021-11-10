@@ -12,7 +12,7 @@ body {
 body {
     font: 12px 'Open Sans', sans-serif;
     color: #212121;
-    background: #eeeeee;
+    background: #ffffff;
     overflow-x: hidden;
 }
 
@@ -27,7 +27,7 @@ input[data-function*='swipe'] {
 }
 
 label[data-function*='swipe'] {
-    position: absolute;
+    position: fixed;
     top: 30px;
     left: 30px;
     z-index: 1;
@@ -43,7 +43,7 @@ label[data-function*='swipe'] {
 }
 
 label[data-function*='swipe']:hover {
-    color: #263249;
+    color: #004424;
 }
 
 input[data-function*='swipe']:checked~label[data-function*='swipe'] {
@@ -69,15 +69,14 @@ input[data-function*='swipe']:checked~label:nth-child(3) {
 
 .headings {
     flex: 1;
-    padding: 80px 30px;
-    background: #eee;
-    box-shadow: 0 0 5px black;
+    padding: 20px 30px;
+    background: rgb(255, 255, 255);
     transform: translate3d(0, 0, 0);
     transition: transform .3s;
 }
 
 input[data-function*='swipe']:checked~.headings {
-    transform: translate3d(280px, 0px, 0px);
+    transform: translate3d(80px, 0px, 0px);
 }
 
 input[data-function*='swipe']:checked~.sidebar {
@@ -90,9 +89,9 @@ input[data-function*='swipe']:checked~.sidebar .menu li {
 
 .sidebar {
     transform: translate3d(-280px, 0px, 0px);
-    position: absolute;
+    position: fixed;
     width: 280px;
-    background: #242629;
+    background: #2c2c2c;
     color: #eee;
     left: 0;
     height: 100%;
@@ -100,21 +99,27 @@ input[data-function*='swipe']:checked~.sidebar .menu li {
 }
 
 .menu li {
-    padding: 10px;
+    padding: 5px;
     list-style: none;
     width: 0%;
+    top: 100px;
 }
 
 .menu li a {
     color: #fff;
-    border: 3px solid #fff;
+    border: 2px solid rgb(255, 255, 255);
     text-align: center;
     font-size: 18px;
     font-weight: 900;
     display: block;
     text-decoration: none;
-    padding: 5px 0px 5px 0;
+    padding: 5px 5px 5px 0;
     margin: 0 20px;
+}
+
+.menu li a:hover {
+    background-color: #004424;
+
 }
 
 h1 {
@@ -126,7 +131,10 @@ h1 {
 
 p {
     margin: 30px 0;
+    position: fixed;
     font-size: 45px;
     font-weight: 280;
     font-size: 30px;
+    left: 300px;
+    right: 300px;
 }
